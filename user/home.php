@@ -637,18 +637,6 @@ data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","m
           </form>
         </div>
 
-            <?php 
-            $mys = mysqli_query($koneksi, "SELECT * FROM tempat_olahraga GROUP BY kategori_tempat");
-            while ($kategori = mysqli_fetch_array($mys)) {
-
-             ?>
-             <ul class="blog-cat">
-              <li><a href="#"><?php echo $kategori['kategori_tempat'] ?> <span></span></a></li>
-            </ul>
-          <?php } ?>
-          </div>
-        </div> -->
-
         <!-- Categories Widget -->
         <div class="sidebar-widget popular-posts">
           <div class="sidebar-title">
@@ -698,6 +686,11 @@ data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","m
           </div>
         <?php } ?>
       </div>
+          
+          </div>
+        </div> -->
+
+
 
     </aside>
   </div>
