@@ -101,7 +101,7 @@
                                         <!-- Schedule Column -->
                                         <div class="schedule-column col-md-4 ">
                                             <div class="inner-column">
-                                                <h5><a href="?page=user/maps&kategori_tempat=Kolam Renang>">
+                                                <h5><a href="?page=user/maps&kategori_tempat=Kolam Renang">
                                                 	<?php echo $Kolams ?> tempat Kolam Renang </a></h5>
                                             </div>
                                         </div>
