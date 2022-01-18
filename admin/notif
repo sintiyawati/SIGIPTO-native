@@ -1,0 +1,58 @@
+            <!-- ============================================================== -->
+            <!-- Messages -->
+            <!-- ============================================================== -->
+            <li class="nav-item dropdown">
+                <?php 
+                $sqlBaru = mysqli_query($koneksi, "SELECT * FROM pemilik_tempat where status_akun='Baru'");
+                $Notif = mysqli_fetch_array($sqlBaru);
+                $fotos= $Notif['foto'];
+                ?>
+                <?php if ($Notif['status_akun']=='Baru') {?>
+                    <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" id="2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-email"></i>
+                    <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                  </a>
+                <?php }else{ ?>
+                    <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" id="2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-message"></i>
+                    </a>
+                <?php } ?>
+
+                <div class="dropdown-menu mailbox animated slideInUp" aria-labelledby="2">
+                    <ul>
+                        <li>
+                           <?php if ($Notif['status_akun']=='Baru') {?>
+                               <div class="drop-title">Ada <?php echo $notifpendaftaranBaru ?> Pendaftaran Baru Masuk</div>
+                           <?php } else {?>
+                               <div class="drop-title">Tidak Ada Pendaftaran Baru</div>
+                           <?php  } ?>
+                        </li>
+                        <li>
+                            <div class="message-center">
+                                <?php if ($Notif ['status_akun']=='Baru') {?>
+                                <!-- Message -->
+                                <a href="?page=pemilik_tempat/index">
+                                    <div class="user-img"> <img src="pemilik_tempat/foto_pemilik/<?php echo $fotos; ?>" alt="user" class="img-circle"> <span class="profile-status online"></span> </div>
+                                    <div class="mail-contnet">
+                                        <h5><?php echo $Notif['nama_lengkap'] ?></h5> <span class="mail-desc"><?php echo $Notif['email'] ?></span> <!-- <span class="time">9:30 AM</span> --> </div>
+                                </a>
+                                <?php }else{?>  
+                                    <!-- Message -->
+                                <a href="#">
+                                    <div class="mail-contnet">
+                                    <span class="mail-desc">Tidak Ada Pendaftaran Baru</span></div>
+                                </a>
+
+                                <?php }?>
+                            </div>
+
+                        </li>
+                        <li>
+                            <a class="nav-link text-center" href="?page=pemilik_tempat/index"> <strong>Lihat Semua Data Pendaftaran Akun Pemilik Tempat</strong> <i class="fa fa-angle-right"></i> </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!-- ============================================================== -->
+            <!-- End Messages -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            

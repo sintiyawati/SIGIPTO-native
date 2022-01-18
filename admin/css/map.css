@@ -1,0 +1,84 @@
+.info-windows{
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    box-shadow:  0 0 5px rgba(0,0,0,.2);
+    padding: 10px;
+}
+.info-windows img{
+    width: 120px;
+    height: 120px;
+    border-radius: .3rem;
+}
+.info-windows .info-title{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 0 10px;
+}
+.info-windows .info-title .address{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+.info-windows .info-title .large{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #949494;
+    margin: 12px 0;
+}
+.info-windows .info-title .price{
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #00a0eb;
+    margin-bottom: 30px;
+}
+.info-windows .info-title .btn{
+    color: #00a0eb;
+    font-size: 14px;
+    font-weight: 600
+}
+
+.dataTables_filter,
+.pagination{
+    float: right !important
+}
+.table.dataTable thead tr th{
+    border-bottom: 1px solid #dedede !important;
+}
+.btn{
+    font-size: 14px;
+    font-weight: normal;
+    padding: 4px 10px;
+    border: 0 !important;
+}
+.btn-info,
+.btn-info:hover,
+.btn-info:focus,
+.btn-warning,
+.btn-warning:hover,
+.btn-warning:focus{
+    color: #FFF;
+}
+#star {
+    float: left;
+    padding-right: 10px;
+}
+
+#star span {
+    padding: 3px;
+    font-size: 18px;
+}
+
+.on {
+    color: orange;
+}
+
+.off {
+    color: #ddd;
+}
+
