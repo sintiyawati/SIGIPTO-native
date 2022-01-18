@@ -542,7 +542,7 @@ data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","m
                 <div class="title-holder text-center">
                   <div class="static-content">
                     <h3 class="title text-center">
-                      <a href="#"><?php echo $d['nama_tempat']; ?></a><br>
+                      <a href="#"><?php echo $d['nama_tempat']; ?>-<?php echo $d['kategori_tempat']; ?></a><br>
                     </h3>
                     <?php
                     if ($d['status_tempat'] == 'Buka') {
@@ -686,7 +686,7 @@ data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","m
           </div>
         <?php } ?>
       </div>
-          
+
           </div>
         </div> -->
 
